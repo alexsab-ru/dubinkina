@@ -31,4 +31,9 @@ $(function() {
 		$('.header__menu').toggleClass('open');
 	});
 
+	$(".first-word").each(function(){
+		var me = $(this);
+		me.html(me.html().replace(/^\s*([^\s]+)(\s|$)/, '<span>$1</span> '));
+	});
+
 }, jQuery);

@@ -51,6 +51,8 @@ b, strong
 	text-transform: uppercase
 	transition: all .5s ease
 	line-height: 1
+	cursor: pointer
+	border: none
 	&:hover
 		background-color: darken($accent, 13%)
 		color: $text
@@ -206,6 +208,26 @@ b, strong
 	height: 100vh
 	background-size: cover
 	background-position: right top
+	display: flex
+	align-items: center
+	&__wrap
+		display: flex
+		justify-content: space-between
+		align-items: flex-end
+	&__title
+		max-width: 650px
+		width: 100%
+		font-weight: bold
+		font-size: 20px
+	&__form
+		background: #ccc
+		height: 400px
+		max-width: 350px
+		width: 100%
+	.first-word span
+		font-size: 55px
+		line-height: 1
+		font-weight: bold
 
 
 @import "media"
