@@ -1,5 +1,6 @@
 $(function() {
 
+	//Меню при скролле
 	if ($(window).width() > 768) {
 
 		var prevScrollpos = window.pageYOffset;
@@ -22,5 +23,12 @@ $(function() {
 			}
 		});
 	}
+	//
+
+	//Мобильное меню
+	$('.mobile-btn').on('click', function() {
+		$(this).toggleClass('active');
+		$('.header__menu').toggleClass('open');
+	});
 
 }, jQuery);
