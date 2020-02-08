@@ -67,6 +67,7 @@ b, strong
 	border: none
 	cursor: pointer
 	z-index: 2
+	display: none
 
 .mobile-btn span
 	width: 28px
@@ -115,7 +116,7 @@ b, strong
 	width: 100%
 	top: 0
 	left: 0
-	transition: all .5s ease-in-out
+	transition: all .3s
 	ul, li
 		list-style: none
 		padding: 0
@@ -196,6 +197,13 @@ b, strong
 	&__callback
 		img
 			display: none
+
+// HERO
+.hero
+	padding-top: 100px
+	background-color: $accent
+	min-height: 600px
+	height: 100vh
 
 
 @import "media"
