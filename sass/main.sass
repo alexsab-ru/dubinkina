@@ -104,6 +104,9 @@ img
 b, strong
 	font-weight: bold
 
+h2, h3
+	font-family: 'Oswald-Regular', sans-serif
+
 .btn
 	padding: 12px 20px
 	background-color: $accent
@@ -371,5 +374,26 @@ form
 		line-height: 1
 		font-weight: bold
 
+section
+	padding: 7vmax 0
+
+// services
+
+.services
+	&__wrap
+		display: flex
+		justify-content: space-between
+	&__item
+		width: 25%
+		text-align: center
+		&-icon
+			img
+				height: 110px
+				width: auto
+				margin: 0 auto 15px
+		h3
+			text-transform: uppercase
+			font-weight: normal
+			font-size: 25px
 
 @import "media"
