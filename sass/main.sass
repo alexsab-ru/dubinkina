@@ -377,14 +377,37 @@ form
 section
 	padding: 7vmax 0
 
+.line-gr
+	position: relative
+	z-index: 1
+	display: inline-block
+	&:after
+		content: ''
+		display: block
+		width: 100%
+		height: 100%
+		background: linear-gradient(90deg, #FAE26B 0%, rgba(250, 226, 107, 0) 85.49%)
+		position: absolute
+		left: -10px
+		bottom: -10px
+		z-index: -1
+		transition: all .5s ease
+	&:hover
+		&:after
+			background: linear-gradient(90deg, #FAE26B 0%, rgba(250, 226, 107, .4) 100%)
+			left: -5px
+			bottom: -1px
+
+
 // services
 
 .services
 	&__wrap
 		display: flex
 		justify-content: space-between
+		flex-wrap: wrap
 	&__item
-		width: 25%
+		width: 23%
 		text-align: center
 		&-icon
 			img
@@ -395,5 +418,6 @@ section
 			text-transform: uppercase
 			font-weight: normal
 			font-size: 25px
+			line-height: 1
 
 @import "media"
