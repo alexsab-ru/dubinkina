@@ -55,8 +55,10 @@ $(function() {
 	});
 	//
 
-	$('.services__slide-wrap').each(function(){
-		$(this).css('height', $(this).width());
-	});
+	if ($(window).width() > 768) {
+		$('.services__slide-wrap').each(function(){
+			$(this).css('height', $(this).width());
+		});
+	}
 
 }, jQuery);
