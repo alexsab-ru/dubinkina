@@ -183,6 +183,7 @@ h2, h3
 	top: 0
 	left: 0
 	transition: all .3s
+	z-index: 2
 	ul, li
 		list-style: none
 		padding: 0
@@ -406,6 +407,7 @@ section
 		display: flex
 		justify-content: space-between
 		flex-wrap: wrap
+		padding-bottom: 7vmax
 	&__item
 		width: 23%
 		text-align: center
@@ -419,5 +421,88 @@ section
 			font-weight: normal
 			font-size: 25px
 			line-height: 1
+	&__slide
+		height: 90%
+		width: 90%
+		background-size: cover
+		background-position: center
+		position: relative
+		padding: 40px
+		&-wrap
+			&:nth-child(even) .services__slide
+				margin-left: auto
+	&-link
+		max-width: 400px
+		width: 100%
+		background-color: rgba(#2D2D2D, .7)
+		color: #fff
+		display: block
+		background-image: url(../img/serv-slide-bg.svg)
+		overflow: hidden
+		background-size: contain
+		background-repeat: no-repeat
+		position: absolute
+		bottom: 35px
+		left: 35px
+		&:before
+			content: ''
+			display: block
+			width: 100%
+			height: 100%
+			//background: linear-gradient(0deg, rgba(#000, .8) 0%, rgba(196, 196, 196, 0) 100%)
+			box-shadow: inset 0 -160px 100px rgba(#2D2D2D, .8)
+			position: absolute
+			left: 0
+			bottom: 0
+			z-index: 1
+			transition: all .25s
+		.first-word
+			width: 75%
+			display: inline-block
+			font-weight: bold
+			position: relative
+			padding: 20px 30px 10px 30px
+			span
+				font-size: 45px
+				line-height: 1
+		&-icon
+			position: absolute
+			right: 15px
+			bottom: 0
+			z-index: 1
+			opacity: .7
+			svg
+				width: 35px
+				height: auto
+				fill: $accent
+		&:hover
+			background-color: rgba(78, 62, 0, 0.9)
+			color: #fff
+			&:before
+				box-shadow: inset 0 -160px 100px rgba(#2D2D2D, .3)
+.slick-dots
+	list-style: none
+	display: flex
+	align-items: center
+	position: absolute
+	bottom: 0
+	left: 50%
+	transform: translateX(-50%)
+	padding: 0
+	margin: 0
+	li
+		margin: 0 3px
+		&.slick-active, &:hover
+			button
+				background-color: #939393
+		button
+			font-size: 0
+			border-radius: 50%
+			width: 15px
+			height: 15px
+			border: 1px solid #939393
+			background-color: transparent
+			cursor: pointer
+			transition: all .2s ease
 
 @import "media"

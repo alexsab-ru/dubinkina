@@ -36,4 +36,27 @@ $(function() {
 		me.html(me.html().replace(/^\s*([^\s]+)(\s|$)/, '<span>$1</span> '));
 	});
 
+	//Услуги слайдер
+	$('.services__slider').slick({
+		autoplay: true,
+		slidesToShow: 2,
+		slidesToScroll: 2,
+		arrows: false,
+		dots: true,
+		responsive: [
+		{
+			breakpoint: 768,
+			settings: {
+				slidesToShow: 1,
+				slidesToScroll: 1
+			}
+		}
+		]
+	});
+	//
+
+	$('.services__slide-wrap').each(function(){
+		$(this).css('height', $(this).width());
+	});
+
 }, jQuery);
