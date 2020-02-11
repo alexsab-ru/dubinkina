@@ -572,14 +572,28 @@ section
 // footer
 
 .footer
-	position: relative
-	min-height: 450px
-	width: 100%
-	padding: 50px 0 60px
 	background-color: #2D2D2D
 	background-image: url(../img/footer-bg.svg)
 	background-repeat: no-repeat
 	background-position: top right
 	background-size: contain
+	color: #B0B0B0
+	min-height: 450px
+	padding: 50px 0 60px
+	position: relative
+	width: 100%
+	z-index: 0
+	.logo
+		color: #fff
+		font-weight: bold
+		font-size: 2.8vmax
+		&:hover
+			color: #000
+	a
+		color: #B0B0B0
+
+	&__wrap
+		display: flex
+
 
 @import "media"
