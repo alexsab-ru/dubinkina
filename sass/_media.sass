@@ -10,6 +10,10 @@
 		font-size: 20px
 	.partners-slide img
 		max-width: 75%
+	.footer
+		font-size: 16px
+	.footer-phone
+		font-size: 24px
 
 // ≥992px
 +media-breakpoint-down(md)
@@ -85,6 +89,28 @@
 		font-weight: 600
 	.services-link .first-word span
 		font-size: 30px
+	.footer
+		background-size: cover
+		background-position: center
+		padding-bottom: 40px
+	.footer-menu
+		width: 40%
+	.footer-location
+		width: 55%
+	.footer-contacts
+		width: 50%
+		align-items: flex-start
+		text-align: left
+	.footer__wrap
+		> *
+			margin-bottom: 5vmax
+	.footer-contacts__links
+		margin-bottom: 20px
+		a
+			display: block
+	.social-link:first-child
+		margin-left: 0
+
 
 
 
@@ -119,6 +145,47 @@
 		max-width: 70%
 	.slick-arrow svg
 		width: 25px
+	.footer__wrap
+		> *
+			width: 100%
+			margin: 0
+	.footer-menu ul li
+		line-height: 2
+	.footer .logo
+		margin-bottom: 0
+		padding-bottom: 15px
+		margin-bottom: 15px
+		display: block
+		font-size: 30px
+		position: relative
+		z-index: 1
+		&::after
+			content: ''
+			display: block
+			background-image: url(../img/line-footer.svg)
+			position: absolute
+			left: 10px
+			bottom: 0
+			width: 230px
+			height: 2px
+			z-index: 1
+	.footer-menu, .footer-location
+		padding-bottom: 10px
+		margin-bottom: 15px
+		position: relative
+		&::after
+			content: ''
+			display: block
+			background-image: url(../img/line-footer.svg)
+			position: absolute
+			left: 0
+			bottom: 0
+			width: 230px
+			height: 2px
+			z-index: 1
+	.footer-location
+		padding-bottom: 18px
+		margin-bottom: 8px
 	
 // ≥576px
 +media-breakpoint-down(xs)
@@ -157,6 +224,28 @@
 		font-size: 18px
 	.partners-slide img
 		max-width: 90%
+	.footer
+		font-size: 15px
+		padding: 25px 0 40px
+	.footer .logo
+		font-size: 20px
+		color: #b0b0b0
+		padding-bottom: 10px
+		&:hover
+			color: #fff
+			&:before
+				display: none
+		&:focus:before
+			display: none
+	.footer-location__map
+		display: none
+	.footer-location__adress
+		line-height: 1.6
+	.footer-phone
+		font-size: 16px
+		font-weight: normal
+	.footer-contacts__links a
+		line-height: 1.8
 
 
 /*==========  Mobile First  ==========*/
