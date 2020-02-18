@@ -26,10 +26,17 @@
 	.mobile-btn
 		margin-left: 1vw
 		display: block
-	.header__menu, .header__phone-link--text, .header-adress, .btn-callback
+	.header__menu, .header__phone-link--text, .header-adress
 		display: none
-	.header__callback img
-		display: block
+	.header__callback
+		a
+			background-color: transparent
+			&:hover
+				background-color: transparent
+			span
+				display: none 
+		img
+			display: block
 	.header__phone-link img
 		position: relative
 		margin: 0
