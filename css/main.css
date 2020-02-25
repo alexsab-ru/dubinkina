@@ -4072,6 +4072,57 @@ section h2:after {
   color: #FDE156;
 }
 
+.contacts-adress {
+  width: 80%;
+}
+
+.contacts__block {
+  min-height: 650px;
+  background-color: #FDE156;
+  padding-top: 100px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.contacts__text {
+  width: 45%;
+  padding-left: 8vmax;
+  font-size: 25px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+  padding-bottom: 5vmax;
+}
+
+.contacts__text a {
+  display: block;
+}
+
+.contacts__text a:hover {
+  color: #fff;
+}
+
+.contacts__text h1 {
+  font-size: 5vmax;
+  font-family: 'Oswald-Regular', sans-serif;
+  font-weight: bold;
+}
+
+.contacts__map {
+  width: 55%;
+}
+
 /*==========  Desktop First  ==========*/
 @media (max-width: 1199.98px) {
   .header {
@@ -4261,6 +4312,17 @@ section h2:after {
   .isnohome .hero__wrap {
     padding: 0 5vmax;
   }
+  .contacts__block {
+    padding-top: 60px;
+  }
+  .contacts__text {
+    font-size: 20px;
+  }
+  .contacts__text h1 {
+    font-size: 45px;
+    margin-bottom: 0;
+    line-height: 1;
+  }
 }
 
 @media (max-width: 767.98px) {
@@ -4401,6 +4463,29 @@ section h2:after {
   }
   .isnohome main {
     padding-bottom: 20px;
+  }
+  .contacts__block {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+    -webkit-flex-direction: column-reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .contacts__text, .contacts__map {
+    width: 100%;
+  }
+  .contacts__text {
+    padding: 40px 20px;
+  }
+  .contacts__text .footer-phone {
+    font-size: inherit;
+  }
+  .contacts__map {
+    height: 350px;
+  }
+  .contacts__text h1, .contacts-links, .contacts-adress {
+    margin-bottom: 20px;
+    width: 100%;
   }
 }
 

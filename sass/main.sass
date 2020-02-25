@@ -862,4 +862,31 @@ section
 		h1
 			color: $accent
 
+.contacts
+	&-adress
+		width: 80%
+	&__block
+		min-height: 650px
+		background-color: $accent
+		padding-top: 100px
+		display: flex
+	&__text
+		width: 45%
+		padding-left: 8vmax
+		font-size: 25px
+		display: flex
+		flex-direction: column
+		justify-content: space-around
+		padding-bottom: 5vmax
+		a
+			display: block
+			&:hover
+				color: #fff
+		h1
+			font-size: 5vmax
+			font-family: 'Oswald-Regular', sans-serif
+			font-weight: bold
+	&__map
+		width: 55%
+
 @import "media"
