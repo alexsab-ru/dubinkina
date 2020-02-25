@@ -3326,7 +3326,7 @@ form .btn {
 
 .hero__form {
   background: #fff;
-  max-width: 400px;
+  max-width: 360px;
   width: 100%;
   -webkit-box-shadow: 5px 5px 4px rgba(0, 0, 0, 0.25);
           box-shadow: 5px 5px 4px rgba(0, 0, 0, 0.25);
@@ -3987,7 +3987,7 @@ section h2:after {
   position: absolute;
   top: 0;
   left: 0;
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: rgba(0, 0, 0, 0.7);
   z-index: -1;
 }
 
