@@ -4580,6 +4580,9 @@ section h2:after {
     min-height: 280px;
     height: auto;
   }
+  .header__phone-link {
+    display: block;
+  }
 }
 
 /*==========  Mobile First  ==========*/
