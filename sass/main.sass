@@ -791,28 +791,44 @@ section
 
 .isnohome
 	.hero
-		min-height: 400px
-		height: auto
-		h1
-			text-transform: uppercase
-			font-weight: 600
-			font-size: 55px
-			span
-				font-size: 40px
-				font-weight: normal
-	.hero__wrap
-		align-items: center
 		position: relative
-		min-height: 350px
-	.hero__form
-		position: absolute
-		right: 0
-		top: 20px
-		box-shadow: 0px 0px 10px rgba(0,0,0,.25)
-.contacts
-	padding: 50px 0 40px
-	p
-		max-width: 60%
-
+		z-index: 1
+		background-size: cover
+		background-position: center
+		&::before
+			content: ''
+			display: block
+			width: 100%
+			height: 100%
+			position: absolute
+			top: 0
+			left: 0
+			background-color: rgba($text, .4)
+			z-index: -1
+		&__wrap
+			align-items: flex-start
+			width: 100%
+			padding: 0 9.72vmax
+			.hero__title
+				position: absolute
+				left: 0
+				bottom: 0
+				background-color: rgba($accent, .8)
+				background-image: url(../img/isnohome-hero-title-bg.svg)
+				background-size: cover
+				background-position: top right
+				padding: 3.47vmax 3.47vmax 9.72vmax 9.72vmax
+				width: 48vmax
+	&.yellow-title
+		h1
+			font-family: 'Oswaldextralight', sans-serif
+			font-weight: 200
+			font-size: 6.25vmax
+			line-height: 100px
+			letter-spacing: 0.005em
+			color: $accent
+			opacity: .8
+			margin-bottom: 0
+			margin-top: -40px
 
 @import "media"

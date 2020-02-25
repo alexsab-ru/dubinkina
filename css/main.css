@@ -1,6 +1,15 @@
 @import url(../libs/slick/slick.css);
 @import url(../libs/Magnific-Popup-master/magnific-popup.css);
 @font-face {
+  font-family: "Oswaldextralight";
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+  src: url("../fonts/Oswaldextralight/Oswaldextralight.eot");
+  src: url("../fonts/Oswaldextralight/Oswaldextralight.eot?#iefix") format("embedded-opentype"), url("../fonts/Oswaldextralight/Oswaldextralight.woff") format("woff"), url("../fonts/Oswaldextralight/Oswaldextralight.ttf") format("truetype");
+}
+
+@font-face {
   font-family: "Oswald-Regular";
   font-weight: normal;
   font-style: normal;
@@ -3964,44 +3973,55 @@ section h2:after {
 }
 
 .isnohome .hero {
-  min-height: 400px;
-  height: auto;
+  position: relative;
+  z-index: 1;
+  background-size: cover;
+  background-position: center;
 }
 
-.isnohome .hero h1 {
-  text-transform: uppercase;
-  font-weight: 600;
-  font-size: 55px;
-}
-
-.isnohome .hero h1 span {
-  font-size: 40px;
-  font-weight: normal;
+.isnohome .hero::before {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: -1;
 }
 
 .isnohome .hero__wrap {
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
-  position: relative;
-  min-height: 350px;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  width: 100%;
+  padding: 0 9.72vmax;
 }
 
-.isnohome .hero__form {
+.isnohome .hero__wrap .hero__title {
   position: absolute;
-  right: 0;
-  top: 20px;
-  -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
-          box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+  left: 0;
+  bottom: 0;
+  background-color: rgba(253, 225, 86, 0.8);
+  background-image: url(../img/isnohome-hero-title-bg.svg);
+  background-size: cover;
+  background-position: top right;
+  padding: 3.47vmax 3.47vmax 9.72vmax 9.72vmax;
+  width: 48vmax;
 }
 
-.contacts {
-  padding: 50px 0 40px;
-}
-
-.contacts p {
-  max-width: 60%;
+.isnohome.yellow-title h1 {
+  font-family: 'Oswaldextralight', sans-serif;
+  font-weight: 200;
+  font-size: 6.25vmax;
+  line-height: 100px;
+  letter-spacing: 0.005em;
+  color: #FDE156;
+  opacity: .8;
+  margin-bottom: 0;
+  margin-top: -40px;
 }
 
 /*==========  Desktop First  ==========*/
@@ -4186,6 +4206,13 @@ section h2:after {
   .social-link:first-child {
     margin-left: 0;
   }
+  .isnohome .hero__wrap .hero__title {
+    font-size: 18px;
+    padding-left: 5vmax;
+  }
+  .isnohome .hero__wrap {
+    padding: 0 5vmax;
+  }
 }
 
 @media (max-width: 767.98px) {
@@ -4276,6 +4303,27 @@ section h2:after {
     padding-bottom: 18px;
     margin-bottom: 8px;
   }
+  .isnohome .hero {
+    min-height: 320px;
+    height: 320px;
+    margin-bottom: 320px;
+  }
+  .isnohome.yellow-title h1 {
+    text-align: center;
+    position: relative;
+    bottom: -90px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+            transform: translateX(-50%);
+    font-size: 55px;
+  }
+  .isnohome .hero__wrap .hero__title {
+    height: 320px;
+    width: 100%;
+    top: 320px;
+    background-color: #FDE156;
+  }
 }
 
 @media (max-width: 575.98px) {
@@ -4362,6 +4410,14 @@ section h2:after {
   }
   .footer-contacts__links a {
     line-height: 1.8;
+  }
+  .isnohome.yellow-title h1 {
+    font-size: 45px;
+  }
+  .isnohome .hero__wrap .hero__title {
+    font-size: 15px;
+    min-height: 320px;
+    height: auto;
   }
 }
 
