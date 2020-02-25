@@ -4498,6 +4498,7 @@ section h2:after {
   }
   .header img {
     max-width: 20px;
+    height: 100%;
   }
   .header__info {
     width: 42%;
