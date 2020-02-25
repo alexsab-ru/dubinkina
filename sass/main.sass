@@ -78,6 +78,7 @@ body
 	font-family: $default-font
 	overflow-x: hidden
 	font-weight: 300
+	margin-top: 100px
 	color: $text
 	input, textarea
 		border: #666 1px solid
@@ -257,62 +258,6 @@ h2, h3
 		img
 			display: none
 
-// .logo 
-// 	display: inline-block
-// 	overflow: hidden
-// 	font-size: 20px
-// 	font-family: $default-font
-// 	font-weight: 600
-// 	position: relative
-// 	transition: all .5s ease
-// 	&:hover
-// 		color: $text
-
-// .logo:before, .logo:after 
-// 	content: ''
-// 	position: absolute
-// 	right: 0
-// 	bottom: 0
-// 	background: $text
-// 	transition: all .5s ease
-
-// .logo:before 
-// 	width: 100%
-// 	height: 2px
-// 	transform: translateX(-100%)
-
-// .logo:after 
-// 	width: 2px
-// 	height: 100%
-// 	transform: translateY(100%)
-
-// .logo > span 
-// 	display: block
-// 	padding: 10px
-// 	position: relative
-
-// .logo > span:before, .logo > span:after
-// 	content: ''
-// 	position: absolute
-// 	left: 0
-// 	top: 0
-// 	background: $text
-// 	transition: all .5s ease
-
-// .logo > span:before 
-// 	width: 100%
-// 	height: 2px
-// 	transform: translateX(100%)
-
-// .logo > span:after 
-// 	width: 2px
-// 	height: 100%
-// 	transform: translateY(-100%)
-
-// .logo:hover:before, .logo:hover:after, .logo:hover > span:before, .logo:hover > span:after 
-// 	transform: translate(0, 0)
-
-
 .form-block
 	background-color: #fff
 	padding: 35px 20px 45px
@@ -348,10 +293,9 @@ form
 			text-decoration: none
 // HERO
 .hero
-	padding-top: 100px
 	background: $accent
 	min-height: 670px
-	height: 100vh
+	height: calc(100vh - 100px)
 	background-size: cover
 	background-position: right top
 	display: flex
@@ -364,7 +308,7 @@ form
 	&__title
 		width: 55%
 		font-weight: bold
-		font-size: 1.38vmax
+		font-size: 20px
 	&__form
 		background: #fff
 		max-width: 360px
@@ -789,7 +733,7 @@ section
 // ВНУТРЕННИЕ СТРАНИЦЫ
 
 .content
-		padding-top: 120px
+		padding-top: 30px
 		padding-bottom: 40px
 		position: relative
 		&:before
@@ -865,7 +809,6 @@ section
 	&__block
 		min-height: 650px
 		background-color: $accent
-		padding-top: 100px
 		display: flex
 	&__text
 		width: 45%
