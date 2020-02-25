@@ -4007,10 +4007,6 @@ section h2:after {
   margin: 30px 0 40px;
 }
 
-.isnohome .services {
-  padding-bottom: 7vmax;
-}
-
 .isnohome .hero {
   position: relative;
   z-index: 1;
