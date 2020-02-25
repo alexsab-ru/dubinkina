@@ -4011,7 +4011,7 @@ section h2:after {
   position: relative;
   z-index: 1;
   background-size: cover;
-  background-position: center;
+  background-position: top right;
 }
 
 .isnohome .hero::before {
@@ -4571,7 +4571,7 @@ section h2:after {
     line-height: 1.8;
   }
   .isnohome.yellow-title h1 {
-    font-size: 45px;
+    font-size: 28px;
   }
   .isnohome .hero__wrap .hero__title {
     font-size: 15px;
