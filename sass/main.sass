@@ -71,7 +71,7 @@
 		opacity: .02
 
 body
-	font-size: 15px
+	font-size: 1.04vmax
 	min-width: 320px
 	position: relative
 	line-height: 1.6
@@ -364,14 +364,14 @@ form
 	&__title
 		width: 55%
 		font-weight: bold
-		font-size: 20px
+		font-size: 1.38vmax
 	&__form
 		background: #fff
-		max-width: 350px
+		max-width: 400px
 		width: 100%
 		box-shadow: 5px 5px 4px rgba(0, 0, 0, 0.25)
 	.first-word span
-		font-size: 55px
+		font-size: 3.81vmax
 		line-height: 1
 		font-weight: bold
 
@@ -808,7 +808,7 @@ section
 		&__wrap
 			align-items: flex-start
 			width: 100%
-			padding: 0 9.72vmax
+			padding: 0 10vmax
 			.hero__title
 				position: absolute
 				left: 0
@@ -817,18 +817,23 @@ section
 				background-image: url(../img/isnohome-hero-title-bg.svg)
 				background-size: cover
 				background-position: top right
-				padding: 3.47vmax 3.47vmax 9.72vmax 9.72vmax
+				padding: 3.47vmax 3.47vmax 5vmax 10vmax 
 				width: 48vmax
-	&.yellow-title
+				font-size: 1.4vmax
+				span
+					font-size: 3.82vmax
 		h1
-			font-family: 'Oswaldextralight', sans-serif
+			font-family: 'Oswald-Regular', sans-serif
 			font-weight: 200
 			font-size: 6.25vmax
 			line-height: 100px
 			letter-spacing: 0.005em
-			color: $accent
+			color: $text
 			opacity: .8
 			margin-bottom: 0
 			margin-top: -40px
+	&.yellow-title
+		h1
+			color: $accent
 
 @import "media"
