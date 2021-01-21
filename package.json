@@ -1,0 +1,22 @@
+{
+  "name": "dubinkina",
+  "version": "1.0.0",
+  "description": "dubinkina.su",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Alexsab/dubinkina.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Alexsab/dubinkina/issues"
+  },
+  "homepage": "https://github.com/Alexsab/dubinkina#readme",
+  "devDependencies": {
+    "browser-sync": "^2.26.12"
+  }
+}

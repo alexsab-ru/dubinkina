@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "ru" }}">
+
+  {%- include head.html -%}
+
+  {%- if jekyll.environment == 'production' -%}
+    {%- include scripts_in_head.html -%}
+  {%- endif -%}
+
+  <body>
+
+    {%- if jekyll.environment == 'production' -%}
+      {%- include scripts_after_boby.html -%}
+    {%- endif -%}
+
+
+    {%- include header.html -%}
+
+    {%- if page.layout == 'home' -%}
+      {%- include banner.html -%}
+    {%- endif -%}
+
+    <main>
+
+    {{ content }}
+
+    </main>
+
+    {%- include footer.html -%}
+    
+
+    <script src="{{ "/js/scripts.js" | relative_url }}"></script>
+
+    <!-- edit: alexsab.ru -->
+
+  </body>
+
+</html>
