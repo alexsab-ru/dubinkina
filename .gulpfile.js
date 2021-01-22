@@ -129,7 +129,7 @@ function dubinkina_run_jekyll(callback) {
 	console.log('lsof -i :<PORT> — show you what process run on your port');
 	console.log('kill -9 <PID> —  kill that process by PID');
 
-	var build = exec('bundle exec jekyll serve --port ' + projects.dubinkina.jekyllPort);
+	var build = exec('bundle exec jekyll serve --port ' + projects.dubinkina.jekyllPort + ' --disable-disk-cache --trace');
 	// var build = spawn('bundle', ['exec', 'jekyll', 'serve']);
 
 	build.stdout.on('data', (data) => {
