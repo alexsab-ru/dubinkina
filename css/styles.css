@@ -3633,6 +3633,10 @@ section h2:after {
   bottom: -1px;
 }
 
+.services {
+  padding-bottom: 0;
+}
+
 .services__wrap {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -3793,6 +3797,10 @@ section h2:after {
   -webkit-transition: all .2s ease;
   -o-transition: all .2s ease;
   transition: all .2s ease;
+}
+
+.news {
+  padding: 0;
 }
 
 .partners-slide {
@@ -4204,6 +4212,7 @@ section h2:after {
   font-family: 'Oswald-Regular', sans-serif;
   font-weight: bold;
   margin-bottom: 0;
+  line-height: 1.2;
 }
 
 .article-subtitle {
@@ -4286,6 +4295,7 @@ section h2:after {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  padding: 0;
 }
 
 .contacts__text {
@@ -4506,9 +4516,6 @@ section h2:after {
   }
   .isnohome .hero__wrap {
     padding: 0 5vmax;
-  }
-  .contacts__block {
-    padding-top: 60px;
   }
   .contacts__text {
     font-size: 20px;

@@ -55,8 +55,8 @@ projects.dubinkina = {
 	scripts_jekyll: {
 		src: [
 			'../node_modules/jquery/dist/jquery.min.js',
-			'src/libs/Magnific-Popup-master/jquery.magnific-popup.js',
 			'../node_modules/slick-carousel/slick/slick.js',
+			'src/libs/Magnific-Popup-master/jquery.magnific-popup.js',
 			'src/js/common.js', // Custom scripts. Always at the end
 		],
 		dest:       'js',
@@ -148,7 +148,7 @@ function dubinkina_run_jekyll(callback) {
 }
 
 // exports.dubinkina_jekyll = parallel(dubinkina_styles_jekyll, dubinkina_scripts_jekyll, dubinkina_browsersync, dubinkina_watch_jekyll);
-exports.dubinkina_run_jekyll = parallel(dubinkina_cd_jekyll, dubinkina_styles_jekyll, dubinkina_scripts_jekyll, dubinkina_run_jekyll, dubinkina_browsersync_jekyll, dubinkina_watch_jekyll);
+exports.dubinkina_jekyll = parallel(dubinkina_cd_jekyll, dubinkina_styles_jekyll, dubinkina_scripts_jekyll, dubinkina_run_jekyll, dubinkina_browsersync_jekyll, dubinkina_watch_jekyll);
 
 
 /* dubinkina END */

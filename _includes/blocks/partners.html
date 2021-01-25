@@ -1,0 +1,18 @@
+<section class="partners" id="partners">
+	<div class="container">
+		<h2>Парнеры</h2>
+
+		<div class="partners-slider">
+
+			{% for img in site.data.gallary.partners %}
+			<div class="partners-slide">
+				<img src="{{ img.url | relative_url }}" alt="{{ img.alt }}">
+			</div>				
+			{% endfor %}
+			
+		</div>
+		<!-- /.partners-slider -->
+
+	</div>
+	<!-- /.container -->
+</section>

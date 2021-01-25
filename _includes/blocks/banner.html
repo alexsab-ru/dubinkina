@@ -1,0 +1,28 @@
+<div class="hero" id="hero" style="background-image: url({{ page.heroBg | relative_url }});">
+
+	{% if page.url == '/' %}<div class="container">{% endif %}
+
+		<div class="hero__wrap">
+
+			{% if page.url != '/' %}<h1>{{ page.title }}</h1>{% endif %}
+
+			<span class="hero__title first-word">
+				{{ page.bannerText }}
+			</span>
+
+			<div class="hero__form form-block">
+				<h4>Хотите узнать о снижении цен и о максимальных скидках?</h4>
+				<p>Оставьте свой номер телефона, и наш менеджер перезвонит Вам</p>
+				<form>
+					<input type="text" placeholder="Ваше имя*" required>
+					<input type="tel" placeholder="+7 (999) 999-99-99" required>
+					<input type="submit" class="btn" value="Отправить">
+				</form>
+				<span class="policy-text">Нажимая на кнопку действия, я даю согласие на <a href="/privacy-policy/">обработку персональных данных</a></span>
+			</div>
+
+		</div>
+
+	{% if page.url == '/' %}</div>{% endif %}
+
+</div>

@@ -1,0 +1,23 @@
+<section class="services" id="services">
+	<div class="container">
+
+		<div class="services__wrap">
+
+			{%- assign services = site.services -%}
+			{% for serv in services %}
+			
+			<a href="{{ serv.url }}" class="services__item">
+				<div class="services__item-icon">
+					<img src="{{ serv.icon | relative_url }}" alt="{{ serv.title }}">
+				</div>
+				<h3 class="line-gr">{{ serv.title }}</h3>
+			</a>
+
+			{% endfor %}			
+
+		</div>
+		<!-- /.services__wrap -->
+
+	</div>
+	<!-- /.container -->
+</section>

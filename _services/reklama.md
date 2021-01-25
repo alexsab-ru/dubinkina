@@ -1,15 +1,9 @@
 ---
 layout: default
-title: О компании
-permalink: /about/
-heroBg: img/about-bg.jpg
+date: 2021-01-22
+title: Реклама
+heroBg: img/reklama-bg.jpg
 class: " yellow-title"
 bannerText: Мы работаем с 2015 года. Этот срок может показаться не слишком внушительным, но тем не менее, за это время мы успели получить репутацию надежного партнера и завоевать доверие большого количества постоянных клиентов, число которых постоянно растет.
-
-metaTitle: О компании ИП Дубинкина
-metaDescr: Реклама, Продвижение, Организация работы спец.техники в Самаре
+icon: img/icons/icon-reklama.svg
 ---
-
-{%- include blocks/services.html -%}
-{%- include blocks/news.html -%}
-{%- include blocks/partners.html -%}

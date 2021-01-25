@@ -17,15 +17,19 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
+encoding: bom|utf-8
 
 title: Дубинкина Е.Ю.
-email: your-email@example.com
 description: >- # this means to ignore newlines until "baseurl:"
   Описание сайта
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: jekyllrb
-github_username:  jekyll
+phone: +7 960 821 02 05
+email: dubinkinaelen@yandex.ru
+address: Россия, Самара, 443017, Заводское шоссе, 13А
+instagram: https://www.instagram.com/?hl=ru
+vk: https://vk.com/
+facebook: https://ru-ru.facebook.com/
 
 # Build settings
 # theme: minima
@@ -53,3 +57,21 @@ exclude:
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
+
+top_menu:
+  - url: /
+    name: Главная
+  - url: /services/
+    name: Услуги
+  - url: /about/
+    name: О компании
+  - url: /contacts/
+    name: Контакты
+
+collections:
+  posts:
+    output: true
+    permalink: /:title/
+  services:
+    output: true
+    permalink: /services/:path/
