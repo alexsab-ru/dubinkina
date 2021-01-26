@@ -14,7 +14,7 @@
     {%- endif -%}
 
 
-    {%- include header.html -%}    
+    {%- include header.html -%}
 
     <main>
 
@@ -26,6 +26,16 @@
           {% if page.thumbFull %}<div class="postthumb"><img src="{{ page.thumbFull | relative_url }}" alt="{{page.title}}"></div>{% endif %}
 
           {{ content }}
+
+          <div class="post-nav">
+            {% if page.next %}
+            <a href="{{page.next.url}}" class="post-prev" title="{{page.next.title}}">&larr; Предыдущая статья</a>
+            {% endif %}
+            {% if page.previous %}
+            <a href="{{page.previous.url}}" class="post-next" title="{{page.previous.title}}">Следующая статья &rarr;</a>
+            {% endif %}
+          </div>
+          
         </div>
       </div>
 

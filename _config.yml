@@ -70,7 +70,7 @@ top_menu:
 
 collections:
   posts:
-    output: true
+    # output: true
     permalink: /:title/
   services:
     output: true
