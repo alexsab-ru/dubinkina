@@ -4218,7 +4218,7 @@ section h2:after {
 .post-nav {
   position: relative;
   height: 24px;
-  bottom: -20px;
+  bottom: -15px;
 }
 
 .post-nav .post-prev, .post-nav .post-next {
