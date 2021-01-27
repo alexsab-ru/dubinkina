@@ -1,0 +1,18 @@
+User-Agent: *
+Disallow: */?
+Disallow: *pdf
+
+User-Agent: Googlebot
+Disallow: */?
+Disallow: *pdf
+Allow: /*.jpg
+Allow: /*.js
+Allow: /*.png
+Allow: /*.css
+Allow: /*.fonts
+
+User-Agent: Yandex
+Disallow: */?
+Disallow: *pdf
+
+Sitemap: https://dubinkina.su/sitemap.xml

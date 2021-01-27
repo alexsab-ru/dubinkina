@@ -34,6 +34,7 @@ facebook: https://ru-ru.facebook.com/
 # Build settings
 # theme: minima
 plugins:
+  - jekyll-sitemap
   - jekyll-feed
 
 # Exclude from processing.
