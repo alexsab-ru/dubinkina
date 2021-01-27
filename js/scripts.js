@@ -5118,10 +5118,11 @@ var ymap = function() {
 		btnSubmit.attr("disabled", true);
 		var url = window.location.href;
 		var replUrl = url.replace('?', '&');
+		var data = th.serialize() +'&referer=' + replUrl;
 		$.ajax({
 			type: "POST",
 			url: "//alexsab.ru/lead/dubinkina/",
-			data: th.serialize() +'&referer=' + replUrl
+			data: data
 		}).done(function( data ) {
 			var res = JSON.parse(data);
 			// console.log( ["success data:", data, res, res.error] );
