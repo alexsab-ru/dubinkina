@@ -4,7 +4,7 @@ title: Бренд
 thumb: img/article/article-570x570-5.png
 thumbFull: img/article/article-1240x513-5.png
 
-metaTitle: Способы повышения узнаваемости в Самаре
+metaTitle: Способы повышения узнаваемости в Самаре — ИП Дубинкина
 metaDescr: "Как повысить узнаваемость бренда? Подбробнее по тел.: 8 (960) 821-02-05"
 ---
 
