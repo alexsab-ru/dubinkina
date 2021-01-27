@@ -5119,6 +5119,7 @@ var ymap = function() {
 		var url = window.location.href;
 		var replUrl = url.replace('?', '&');
 		var data = th.serialize() +'&referer=' + replUrl;
+		// console.log(data);
 		$.ajax({
 			type: "POST",
 			url: "//alexsab.ru/lead/dubinkina/",
