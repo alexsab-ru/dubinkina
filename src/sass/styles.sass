@@ -848,4 +848,40 @@ section
 	&__map
 		width: 55%
 
+.modal
+	background-color: #fff
+	padding: 40px 45px
+	position: relative
+	top: 5%
+	left: 50%
+	transform: translate(-50%, 0)
+	max-width: 450px
+	width: 100%
+	&-link
+	h2, p, h3
+		text-align: center
+	h2:first-letter, p:first-letter, h3:first-letter
+		text-transform: uppercase
+	h2
+		font-size: 1.4em
+	h3
+		font-size: 1em
+	p
+		font-size: 16px
+	.range
+		&__title
+			text-align: left
+			font-size: 18px
+		&__wrapper
+			margin-bottom: 40px
+	&.credit
+		padding: 25px 30px
+		max-width: 560px
+		top: 40px
+		position: relative
+		transform: translate(-50%, 0)
+	&.error
+		.rand
+			text-align: center
+
 @import "media"

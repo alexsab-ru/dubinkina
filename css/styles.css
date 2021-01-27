@@ -4354,6 +4354,62 @@ section h2:after {
   width: 55%;
 }
 
+.modal {
+  background-color: #fff;
+  padding: 40px 45px;
+  position: relative;
+  top: 5%;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0);
+      -ms-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
+  max-width: 450px;
+  width: 100%;
+}
+
+.modal h2, .modal p, .modal h3 {
+  text-align: center;
+}
+
+.modal h2:first-letter, .modal p:first-letter, .modal h3:first-letter {
+  text-transform: uppercase;
+}
+
+.modal h2 {
+  font-size: 1.4em;
+}
+
+.modal h3 {
+  font-size: 1em;
+}
+
+.modal p {
+  font-size: 16px;
+}
+
+.modal .range__title {
+  text-align: left;
+  font-size: 18px;
+}
+
+.modal .range__wrapper {
+  margin-bottom: 40px;
+}
+
+.modal.credit {
+  padding: 25px 30px;
+  max-width: 560px;
+  top: 40px;
+  position: relative;
+  -webkit-transform: translate(-50%, 0);
+      -ms-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
+}
+
+.modal.error .rand {
+  text-align: center;
+}
+
 /*==========  Desktop First  ==========*/
 @media (max-width: 1199.98px) {
   .header {
