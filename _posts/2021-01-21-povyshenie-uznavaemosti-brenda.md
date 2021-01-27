@@ -1,8 +1,8 @@
 ---
 layout: single
 title: Бренд
-thumb: img/2.jpg
-thumbFull: img/article.jpg
+thumb: img/article/article-570x570-5.png
+thumbFull: img/article/article-1240x513-5.png
 
 metaTitle: Способы повышения узнаваемости в Самаре
 metaDescr: "Как повысить узнаваемость бренда? Подбробнее по тел.: 8 (960) 821-02-05"

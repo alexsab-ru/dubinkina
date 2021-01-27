@@ -1,8 +1,8 @@
 ---
 layout: single
 title: Программа продвижения мероприятий
-thumb: img/1.jpg
-thumbFull: img/article.jpg
+thumb: img/article/article-570x570-4.png
+thumbFull: img/article/article-1240x513-4.png
 
 metaTitle: Составление программы продвижения в Самаре
 metaDescr: "Подробный список мероприятий, осуществляемых в рамках продвижения товара либо услуги. Подбробнее по тел.: 8 (960) 821-02-05"

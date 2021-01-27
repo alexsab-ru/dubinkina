@@ -1,8 +1,8 @@
 ---
 layout: single
 title: Выставочный маркетинг в Самаре
-thumb: img/1.jpg
-thumbFull: img/article.jpg
+thumb: img/article/article-570x570-6.png
+thumbFull: img/article/article-1240x513-6.png
 
 metaTitle: Выставочный маркетинг в Самаре
 metaDescr: "Высококачественные услуги в вопросах организации выставок. Подбробнее по тел.: 8 (960) 821-02-05"

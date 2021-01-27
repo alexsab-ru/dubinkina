@@ -1,8 +1,8 @@
 ---
 layout: single
 title: Организация семинаров и конференций в Самаре
-thumb: img/1.jpg
-thumbFull: img/article.jpg
+thumb: img/article/article-570x570-2.png
+thumbFull: img/article/article-1240x513-2.png
 
 metaTitle: Проведение конференций в Самаре
 metaDescr: "Поддержание имиджа компании и наращивания её репутации. Проведение конференций, форумов, семинаров, презентаций, бизнес-ланчей. Подбробнее по тел.: 8 (960) 821-02-05"

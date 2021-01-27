@@ -1,8 +1,8 @@
 ---
 layout: single
 title: Маркетинг мероприятий или event-маркетинг в Самаре
-thumb: img/2.jpg
-thumbFull: img/article.jpg
+thumb: img/article/article-570x570-1.png
+thumbFull: img/article/article-1240x513-1.png
 
 metaTitle: Маркетинг мероприятий в Самаре
 metaDescr: "Планирование, организация и проведение офлайн или онлайн мероприятий для продвижения вашего бренда, товаров или услуг. Подбробнее по тел.: 8 (960) 821-02-05"

@@ -1,8 +1,8 @@
 ---
 layout: single
 title: Продвижение торговой марки в Самаре
-thumb: img/1.jpg
-thumbFull: img/article.jpg
+thumb: img/article/article-570x570-3.png
+thumbFull: img/article/article-1240x513-3.png
 
 metaTitle: Продвижение торговой марки в Самаре
 metaDescr: "Рассчитайте бюджет продвижения, составьте программу продвижения и план-график работ. Подбробнее по тел.: 8 (960) 821-02-05"
