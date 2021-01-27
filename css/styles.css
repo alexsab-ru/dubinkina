@@ -3830,6 +3830,10 @@ section h2:after {
           transform: scale(1.2);
 }
 
+.partners .slick-list {
+  overflow: initial;
+}
+
 .slick-arrow {
   background-color: transparent;
   border: none;
